@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StsOnlineShopApp", "StsOnlineShopApp\StsOnlineShopApp.csproj", "{3DA9790D-56D1-4FA3-AFE7-E76510BBD0AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StsOnlineShopApp", "StsOnlineShopApp\StsOnlineShopApp.csproj", "{3DA9790D-56D1-4FA3-AFE7-E76510BBD0AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{9AB3B2BA-A288-4308-833D-16A498FC3E60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3DA9790D-56D1-4FA3-AFE7-E76510BBD0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DA9790D-56D1-4FA3-AFE7-E76510BBD0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DA9790D-56D1-4FA3-AFE7-E76510BBD0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB3B2BA-A288-4308-833D-16A498FC3E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB3B2BA-A288-4308-833D-16A498FC3E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB3B2BA-A288-4308-833D-16A498FC3E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB3B2BA-A288-4308-833D-16A498FC3E60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
