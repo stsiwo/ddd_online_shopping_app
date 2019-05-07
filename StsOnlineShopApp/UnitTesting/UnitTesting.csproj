@@ -19,6 +19,7 @@
   <ItemGroup>
     <Folder Include="Application\" />
     <Folder Include="Domain\" />
+    <Folder Include="Infrastructure\Specification\NewFolder\" />
     <Folder Include="UI\" />
   </ItemGroup>
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace StsOnlineShopApp.Infrastructure.Specification
+namespace StsOnlineShopApp.Infrastructure.Specification.Core
 {
     public class OrSpecification<T> : CompositeSpecification<T>
     {
@@ -22,7 +22,12 @@ namespace StsOnlineShopApp.Infrastructure.Specification
             Expression<Func<T, bool>> leftExpression = _left.ToExpression();
             Expression<Func<T, bool>> rightExpression = _right.ToExpression();
 
-            BinaryExpression andExpression = Expression.OrElse(leftExpression.Body, rightExpression.Body);
+            /**
+             * need to use Expression.Invoke method rather than rightExpression.Body
+             * when you need to compile combined Expression into Delete:
+             * need to review: https://stackoverflow.com/questions/15589239/linq-expressions-variable-p-of-type-referenced-from-scope-but-it-is-not-defi/15592610
+             **/
+            BinaryExpression andExpression = Expression.OrElse(leftExpression.Body, Expression.Invoke(rightExpression, leftExpression.Parameters.Single()));
 
             return Expression.Lambda<Func<T, bool>>(andExpression, leftExpression.Parameters.Single());
         }

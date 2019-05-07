@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 
-namespace StsOnlineShopApp.Infrastructure.Specification
+namespace StsOnlineShopApp.Infrastructure.Specification.Core
 {
     public abstract class CompositeSpecification<T> : ISpecification<T>
     {
@@ -24,9 +24,9 @@ namespace StsOnlineShopApp.Infrastructure.Specification
         {
             return new OrSpecification<T>(this, specification);
         }
-        public ISpecification<T> Not(ISpecification<T> specification)
-        {
-            return new NotSpecification<T>(this, specification);
-        }
+//        public ISpecification<T> Not(ISpecification<T> specification)
+//        {
+//            return new NotSpecification<T>(this, specification);
+//        }
     }
 }

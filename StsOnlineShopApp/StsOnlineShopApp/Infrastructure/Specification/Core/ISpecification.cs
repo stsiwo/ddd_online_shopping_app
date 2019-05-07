@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace StsOnlineShopApp.Infrastructure.Specification
+namespace StsOnlineShopApp.Infrastructure.Specification.Core
 {
     public interface ISpecification<T>
     {
@@ -15,6 +15,6 @@ namespace StsOnlineShopApp.Infrastructure.Specification
 
         ISpecification<T> Or(ISpecification<T> specification);
 
-        ISpecification<T> Not(ISpecification<T> specification);
+        //ISpecification<T> Not(ISpecification<T> specification);
     }
 }
