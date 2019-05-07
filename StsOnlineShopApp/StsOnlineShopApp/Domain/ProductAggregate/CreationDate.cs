@@ -13,5 +13,9 @@ namespace StsOnlineShopApp.Domain.ProductAggregate
         {
             this.creationDate = DateTime.Now;
         }
+        public override string ToString()
+        {
+            return creationDate.ToString("MM/dd/yyyy");
+        }
     }
 }

@@ -7,11 +7,16 @@ namespace StsOnlineShopApp.Domain.UserAggregate
 {
     public class UserId
     {
-        public readonly String userId;
+        private readonly String userId;
 
         public UserId()
         {
             this.userId = System.Guid.NewGuid().ToString();
+        }
+
+        public override String ToString()
+        {
+            return this.userId;
         }
     }
 }

@@ -8,10 +8,14 @@ namespace StsOnlineShopApp.Domain.UserAggregate
     public class CreationDate
     {
         public readonly DateTime creationDate;
-
         public CreationDate()
         {
             this.creationDate = DateTime.Now; 
+        }
+
+        public override string ToString()
+        {
+            return creationDate.ToString("MM/dd/yyyy");
         }
     }
 }

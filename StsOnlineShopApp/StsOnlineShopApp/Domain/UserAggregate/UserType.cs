@@ -11,10 +11,15 @@ namespace StsOnlineShopApp.Domain.UserAggregate
 
         public UserType()
         {
-            // need some logic to distinguish the user is login or not
-            // #REFACTOR 
-            this.userType = UserTypeEnum.Guest;
-        } 
-            
+            // default is guest user
+            this.userType = UserTypeEnum.Guest; 
+        }
+
+        public override string ToString()
+        {
+            return this.userType.ToString();
+        }
+
+
     }
 }

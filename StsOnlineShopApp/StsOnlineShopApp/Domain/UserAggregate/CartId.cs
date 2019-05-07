@@ -14,5 +14,10 @@ namespace StsOnlineShopApp.Domain.UserAggregate
         {
             this.cartId = System.Guid.NewGuid().ToString();
         }
+
+        public override string ToString()
+        {
+            return this.cartId;
+        }
     }
 }
