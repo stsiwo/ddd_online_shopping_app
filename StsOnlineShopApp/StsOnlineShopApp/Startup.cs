@@ -12,7 +12,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using StsOnlineShopApp.Infrastructure;
 
-
 namespace StsOnlineShopApp
 {
     public class Startup
@@ -39,6 +38,7 @@ namespace StsOnlineShopApp
 
             // database config (refer to appsettings.json's ConnectionString for more info)
             services.AddDbContext<AppDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("StsOnlineShopAppDatabase")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
