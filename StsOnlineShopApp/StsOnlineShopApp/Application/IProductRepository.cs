@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using StsOnlineShopApp.UI.DTO;
 using StsOnlineShopApp.Infrastructure.Specification.Core;
+using System.Collections.Generic;
 
 namespace StsOnlineShopApp.Application
 {
     public interface IProductRepository
     {
-        getProducts(ISpecification specification);
+        List<Product> getProducts(ISpecification<Product> specification);
+
+        List<Product> getAllProducts();
     }
 }

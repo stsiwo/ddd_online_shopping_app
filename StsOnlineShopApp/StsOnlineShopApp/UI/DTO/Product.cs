@@ -23,7 +23,7 @@ namespace StsOnlineShopApp.UI.DTO
          *  DataContract Attribute automatically change complex data structure to array or object in json 
          **/ 
         [DataMember]
-        public List<String> SubImageList  { get; private set; }
+        public List<String> SubImageURLList  { get; private set; }
 
         [DataMember]
         public decimal Price  { get; private set; }

@@ -7,17 +7,12 @@ namespace StsOnlineShopApp.Infrastructure.DataEntity
 {
     public class Product
     {
-        public string Id { get; set; }
-        public string Name { get; set; }
+        public String Id { get; set; }
+        public String Name { get; set; }
+        public String Description { get; set; }
+        public String MainImageURL { get; set; }
+        public List<SubImage> SubImages  { get; set; }
         public decimal Price { get; set; }
-        public Product(string Id, string Name, decimal Price)
-        {
-            this.Id = Id;
-            this.Name = Name;
-            this.Price = Price;
-        }
-
-
-        
+        public List<Review> Reviews  { get; set; }
     }
 }
