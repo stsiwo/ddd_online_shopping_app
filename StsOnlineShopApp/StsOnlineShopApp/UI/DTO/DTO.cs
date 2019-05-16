@@ -7,7 +7,7 @@ using System.IO;
 using System.Text;
 using System.Runtime.Serialization;
 
-namespace StsOnlineShopApp.Experiment.UICommand
+namespace StsOnlineShopApp.UI.DTO
 {
     [DataContract]
     public class DTO : IDTO

@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace StsOnlineShopApp.Experiment.UICommand
+namespace StsOnlineShopApp.UI.UICommand
 {
     public class DemoCommandHandler : IRequestHandler<DemoCommand, DTO>
     {

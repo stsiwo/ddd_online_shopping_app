@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StsOnlineShopApp.Experiment.UICommand
+namespace StsOnlineShopApp.UI.DTO
 {
     // marker interface
     public interface IDTO

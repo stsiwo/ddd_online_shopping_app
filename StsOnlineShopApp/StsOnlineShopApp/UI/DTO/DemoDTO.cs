@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
 
-namespace StsOnlineShopApp.Experiment.UICommand
+namespace StsOnlineShopApp.UI.DTO
 {
     [DataContract]
     public class DemoDTO : DTO
