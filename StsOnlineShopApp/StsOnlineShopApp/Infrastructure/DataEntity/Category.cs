@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StsOnlineShopApp.Domain.ProductAggregate;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,8 +12,8 @@ namespace StsOnlineShopApp.Infrastructure.DataEntity
     public class Category
     {
         [Key]
-        [Column("id")]
-        public int Id { get; set; }
+        [Column("id", TypeName = "smallint")]
+        public CategoryTypeEnum Id { get; set; }
 
         [Required]
         [Column("title")]
