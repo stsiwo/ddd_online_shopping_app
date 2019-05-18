@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using StsOnlineShopApp.Infrastructure;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using StsOnlineShopApp.IoCModule;
 
 namespace StsOnlineShopApp
 {
@@ -44,6 +45,7 @@ namespace StsOnlineShopApp
             var containerBuilder = new ContainerBuilder();
             // module in Autofac helps separation of registration of dependencies. you can separate whole registration into some pieces.
             containerBuilder.RegisterModule<DefaultModule>();
+            containerBuilder.RegisterModule<AutoMapperConfigModule>();
             containerBuilder.Populate(services);
             var container = containerBuilder.Build();
             return new AutofacServiceProvider(container);

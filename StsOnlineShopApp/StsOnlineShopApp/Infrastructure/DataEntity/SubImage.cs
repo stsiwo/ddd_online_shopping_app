@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StsOnlineShopApp.Infrastructure.DataEntity
 {
-    public class SubImage
+    public class SubImage : IDataEntity
     {
         public String Id { get; set; }
         public String Url { get; set; }

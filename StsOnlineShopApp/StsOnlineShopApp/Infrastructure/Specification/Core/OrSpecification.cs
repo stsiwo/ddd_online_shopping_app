@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using StsOnlineShopApp.Infrastructure.DataEntity;
 
 namespace StsOnlineShopApp.Infrastructure.Specification.Core
 {
-    public class OrSpecification<T> : CompositeSpecification<T>
+    public class OrSpecification<T> : CompositeSpecification<T> where T : IDataEntity
     {
         private readonly ISpecification<T> _left;
         private readonly ISpecification<T> _right;

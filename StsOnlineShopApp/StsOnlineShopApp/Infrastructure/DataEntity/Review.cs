@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StsOnlineShopApp.Infrastructure.DataEntity
 {
-    public class Review
+    public class Review : IDataEntity
     {
         public String Id { get; set; }
 
@@ -16,7 +16,7 @@ namespace StsOnlineShopApp.Infrastructure.DataEntity
 
         public int Score { get; set; }
 
-        public String CreationDate { get; set; }
+        public DateTime CreationDate { get; set; }
         
         [ForeignKey("ProductId")]
         public Product Product { get; set; }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace StsOnlineShopApp.Infrastructure.DataEntity
 {
-    public class Product
+    public class Product : IDataEntity
     {
         public String Id { get; set; }
         public String Name { get; set; }
@@ -14,5 +14,6 @@ namespace StsOnlineShopApp.Infrastructure.DataEntity
         public List<SubImage> SubImages  { get; set; }
         public decimal Price { get; set; }
         public List<Review> Reviews  { get; set; }
+        public DateTime CreationDate { get; set; }
     }
 }
